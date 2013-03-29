@@ -1,8 +1,9 @@
 djeventstream
 =============
 
-This is a framework for receiving events sent by the Python logging
-framework. It is the Django-based mate to loghandlersplus. It can take
+Framework for receiving events sent by the Python loggers. 
+
+This is the Django-based mate to loghandlersplus. It can take
 events from a Python logging framework HTPPHandler, or a
 loghandlersplus SNSHandler, and convert those to Django signals.
 
