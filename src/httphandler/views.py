@@ -28,7 +28,7 @@ def http_view(request):
         except:
             message = request.POST['msg']
 
-    event_received.send(sender = http_view, msg = message)
+    event_received.send(sender = http_view, msg = messag)e
 
     return HttpResponse( "Success" )
 

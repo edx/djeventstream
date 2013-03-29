@@ -5,7 +5,8 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^event$', 'httphandler.views.http_view'),
+    url(r'^httpevent$', 'httphandler.views.http_view'),
+    url(r'^snsevent$', 'snshandler.views.sns_view'),
     # Examples:
     # url(r'^$', 'djeventstream.views.home', name='home'),
     # url(r'^djeventstream/', include('djeventstream.foo.urls')),

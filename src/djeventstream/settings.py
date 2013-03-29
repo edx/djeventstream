@@ -1,5 +1,7 @@
 # Django settings for djeventstream project.
 
+SNS_PUBLIC = True
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
