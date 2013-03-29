@@ -36,7 +36,10 @@ def sns_view(request):
         r = requests.get(url)
     elif body['Type'] == 'Notification':
         message = body['Message']
-        subject = body['Subject']
+        if "Subject" in body: 
+            subject = body['Subject']
+        else: 
+            subject = None
         event_received.send(sender = sns_view, msg = message)
     else:
         raise Exception("Unknown message type")

@@ -28,7 +28,12 @@ def http_view(request):
         except:
             message = request.POST['msg']
 
-    event_received.send(sender = http_view, msg = messag)e
+    event_received.send(sender = http_view, msg = message)
 
     return HttpResponse( "Success" )
 
+# uncomment/import for testing. 
+# 
+# @receiver(event_received)
+# def f(sender, **kwargs):
+#     print kwargs['msg']
