@@ -9,10 +9,7 @@ loghandlersplus SNSHandler, and convert those to Django signals.
 
 To use: 
 
-    sudo pip install -e git+https://github.com/edx/djeventstream#egg=djeventstream
-
-Or if the above fails, git clone the repository, and run: 
-
+    git clone https://github.com/edx/djeventstream.git
     sudo python setup.py install
 
 Add the handler to INSTALLED_APPS in settings.py: 
